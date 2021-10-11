@@ -15,7 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $users = User::all();
-
-    return view('welcome')->with('users', $users);
+    return view('welcome')->with('users', User::all());
 });
