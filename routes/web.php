@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome')->with('users', User::all());
 });
+
+Route::get('/test', function () {
+    
+});
